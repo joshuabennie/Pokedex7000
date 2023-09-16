@@ -1,0 +1,127 @@
+/* Existing CSS ... */
+
+/* Main container for the search input and button */
+.searchDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative; /* Added for positioning the suggestion dropdown */
+}
+
+/* Styles for the input field */
+.search {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 0;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.searchPoke {
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Button hover styles */
+.searchPoke:hover {
+    background-color: #0056b3;
+}
+
+.search:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+/* Main container for all the cards */
+.displaySection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: 50vh;
+}
+
+.displaySection .card {
+    flex: 1 0 calc(18% - 18px);
+    max-width: calc(18% - 18px);
+    box-sizing: border-box;
+    background-color: #2C3E50;
+    color: white;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in forwards;
+    opacity: 0;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.displaySection .card:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    z-index: 1;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.displaySection .card img {
+    width: 100%;
+    height: auto;
+}
+
+.displaySection .card a {
+    color: white;
+}
+
+Button {
+    background-color: #E74C3C;
+    border: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Suggestion dropdown styling */
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 200px; 
+    overflow-y: auto; 
+    position: absolute;
+    width: 300px;
+    top: 40px; 
+    left: 0; 
+    background-color: white;
+    z-index: 2; 
+    border-radius: 5px;
+}
+
+.suggestionItem {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.suggestionItem:hover {
+    background-color: #f6f6f6;
+}
+
+
+

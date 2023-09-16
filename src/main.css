@@ -1,0 +1,8 @@
+/* main.css */
+
+html, body {
+    background: linear-gradient(to right, red, blue);
+    height: 100%; /* Ensuring the background covers the full height of the viewport */
+    margin: 0; /* Removing any default margin */
+    padding: 0; /* Removing any default padding */
+}

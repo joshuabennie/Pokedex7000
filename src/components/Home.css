@@ -1,0 +1,23 @@
+.Pokedex{
+    text-align: center;
+}
+
+.lead{
+    text-align: center;
+    color: white;
+}
+
+.paragraph1{
+text-align: center;
+color: white;
+}
+
+.jumbotron{
+    background: linear-gradient(to right, rgba(234, 229, 229, 0.2), rgba(0, 0, 0, 0.586));
+}
+
+.Pokedex{
+    color: #FFF; /* This sets the text color to white. Adjust if needed. */
+    text-shadow: 0 0 1px #FFF, 0 0 2.5px #FFF, 0 0 5px #FFF, 0 0 10px #FFF;
+    outline-color: black;
+}
